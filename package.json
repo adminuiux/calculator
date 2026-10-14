@@ -1,0 +1,52 @@
+{
+  "name": "@adminuiux/calculator",
+  "version": "1.0.0",
+  "description": "Production-ready, zero-dependency universal JavaScript calculator engine and DOM component with stream arithmetic, smart percentage handling, scientific functions, and WCAG accessibility.",
+  "main": "dist/calculator.js",
+  "module": "dist/calculator.esm.js",
+  "browser": "dist/calculator.min.js",
+  "unpkg": "dist/calculator.min.js",
+  "jsdelivr": "dist/calculator.min.js",
+  "exports": {
+    ".": {
+      "import": "./dist/calculator.esm.js",
+      "require": "./dist/calculator.js",
+      "default": "./dist/calculator.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node test/calculator.test.js",
+    "build": "node scripts/build.js"
+  },
+  "keywords": [
+    "calculator",
+    "javascript-calculator",
+    "math-evaluator",
+    "arithmetic",
+    "scientific-calculator",
+    "percentage-calculator",
+    "desk-calculator",
+    "vanilla-js",
+    "zero-dependencies",
+    "adminuiux",
+    "bootstrap-5"
+  ],
+  "author": "adminuiux.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adminuiux/calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adminuiux/calculator/issues"
+  },
+  "homepage": "https://adminuiux.com"
+}
