@@ -1,7 +1,7 @@
 # @goadminuiux/calculator
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/adminuiux/calculator/main/calculator.png" alt="AdminUIUX Calculator JS" width="100%">
+  <img src="https://raw.githubusercontent.com/adminuiux/calculator/main/calculator-1.png" alt="AdminUIUX Calculator JS" width="100%">
 </p>
 
 > Production-ready, zero-dependency universal JavaScript calculator engine & DOM component with chained stream arithmetic, smart percentage handling, scientific math functions, and accessibility.
