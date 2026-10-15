@@ -21,6 +21,7 @@
   "files": [
     "dist",
     "src",
+    "calculator.png",
     "README.md",
     "LICENSE",
     "CHANGELOG.md"
