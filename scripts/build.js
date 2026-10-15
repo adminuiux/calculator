@@ -1,5 +1,5 @@
 /**
- * Build Script for @adminuiux/calculator
+ * Build Script for @goadminuiux/calculator
  * Generates UMD, ESM, and Minified production bundles.
  */
 
@@ -22,7 +22,7 @@ const umdCode = fs.readFileSync(path.join(distDir, 'calculator.js'), 'utf8');
 terser.minify(umdCode, {
     compress: { drop_console: false },
     mangle: true,
-    output: { comments: /^!|@license|@adminuiux/ }
+    output: { comments: /^!|@license|@goadminuiux/ }
 }).then(minified => {
     fs.writeFileSync(path.join(distDir, 'calculator.min.js'), minified.code);
     console.log('✔ Built dist/calculator.min.js (' + minified.code.length + ' bytes)');

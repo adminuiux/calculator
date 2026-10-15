@@ -1,5 +1,5 @@
 /**
- * @adminuiux/calculator
+ * @goadminuiux/calculator
  * AdminUIUX - Production-Ready Universal Calculator Package
  *
  * Lightweight, zero-dependency vanilla JavaScript calculator engine & DOM component.

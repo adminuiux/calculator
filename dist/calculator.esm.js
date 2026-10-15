@@ -1,5 +1,5 @@
 /**
- * @adminuiux/calculator (ES Module Bundle)
+ * @goadminuiux/calculator (ES Module Bundle)
  * AdminUIUX - Production-Ready Universal Calculator Package
  *
  * @version 1.0.0

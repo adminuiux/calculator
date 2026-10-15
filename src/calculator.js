@@ -1,5 +1,5 @@
 /**
- * @adminuiux/calculator - Core Calculator Engine
+ * @goadminuiux/calculator - Core Calculator Engine
  * Framework-independent mathematical evaluation engine and stream calculator state machine.
  *
  * @license MIT

@@ -1,5 +1,5 @@
 /**
- * @adminuiux/calculator - Entry Point Module
+ * @goadminuiux/calculator - Entry Point Module
  * Universal export of Calculator, Formatter, StreamCalculator, and AdminUIUXCalculator.
  *
  * @license MIT
