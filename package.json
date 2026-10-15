@@ -1,5 +1,5 @@
 {
-  "name": "@adminuiux/calculator",
+  "name": "@goadminuiux/calculator",
   "version": "1.0.0",
   "description": "Production-ready, zero-dependency universal JavaScript calculator engine and DOM component with stream arithmetic, smart percentage handling, scientific functions, and WCAG accessibility.",
   "main": "dist/calculator.js",
