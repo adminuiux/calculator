@@ -22,9 +22,17 @@ const umdCode = fs.readFileSync(path.join(distDir, 'calculator.js'), 'utf8');
 terser.minify(umdCode, {
     compress: { drop_console: false },
     mangle: true,
-    output: { comments: /^!|@license|@goadminuiux/ }
+    output: { comments: /^!|@license|@goadminuiux/ },
+    sourceMap: {
+        filename: 'calculator.min.js',
+        url: 'calculator.min.js.map'
+    }
 }).then(minified => {
     fs.writeFileSync(path.join(distDir, 'calculator.min.js'), minified.code);
+    if (minified.map) {
+        fs.writeFileSync(path.join(distDir, 'calculator.min.js.map'), minified.map);
+        console.log('✔ Built dist/calculator.min.js.map (' + minified.map.length + ' bytes)');
+    }
     console.log('✔ Built dist/calculator.min.js (' + minified.code.length + ' bytes)');
     console.log('✔ All builds generated successfully in dist/');
 }).catch(err => {

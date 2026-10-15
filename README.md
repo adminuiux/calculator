@@ -7,9 +7,12 @@
 > Production-ready, zero-dependency universal JavaScript calculator engine & DOM component with chained stream arithmetic, smart percentage handling, scientific math functions, and accessibility.
 
 [![npm version](https://img.shields.io/npm/v/@goadminuiux/calculator.svg)](https://www.npmjs.com/package/@goadminuiux/calculator)
+[![Socket Badge](https://badge.socket.dev/npm/package/@goadminuiux/calculator/1.0.1)](https://badge.socket.dev/npm/package/@goadminuiux/calculator/1.0.1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](package.json)
 [![Bundle Size](https://img.shields.io/badge/size-%3C22KB%20minified-brightgreen.svg)](dist/calculator.min.js)
+
+🔗 **Live Demo & Interactive Preview:** [https://adminuiux.com/plugin-preview/calculator-plugin-preview.html](https://adminuiux.com/plugin-preview/calculator-plugin-preview.html)
 
 ---
 
