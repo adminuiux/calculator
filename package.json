@@ -1,6 +1,9 @@
 {
   "name": "@goadminuiux/calculator",
   "version": "1.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Production-ready, zero-dependency universal JavaScript calculator engine and DOM component with stream arithmetic, smart percentage handling, scientific functions, and accessibility.",
   "main": "dist/calculator.js",
   "module": "dist/calculator.esm.js",
