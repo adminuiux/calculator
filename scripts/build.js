@@ -22,8 +22,12 @@ if (!fs.existsSync(distDir)) {
     fs.mkdirSync(distDir, { recursive: true });
 }
 
-// 1. Read main source file
-const srcCode = fs.readFileSync(srcFile, 'utf8');
+// 1. Read main source file and sync version from package.json
+const pkg = JSON.parse(fs.readFileSync(path.join(rootDir, 'package.json'), 'utf8'));
+let srcCode = fs.readFileSync(srcFile, 'utf8');
+if (pkg.version) {
+    srcCode = srcCode.replace(/(\*\s*@version\s+)[\d\.\w\-]+/g, `$1${pkg.version}`);
+}
 
 // 2. Generate dist/calculator.js (Universal UMD)
 fs.writeFileSync(path.join(distDir, 'calculator.js'), srcCode, 'utf8');

@@ -5,7 +5,7 @@
  * Lightweight, zero-dependency vanilla JavaScript calculator engine & DOM component.
  * Works seamlessly in Browser (direct <script> / CDN), CommonJS (Node.js), and ES Modules.
  *
- * @version 1.0.0
+ * @version 1.0.2
  * @author AdminUIUX (adminuiux.com)
  * @license MIT
  *
@@ -452,7 +452,7 @@ if (typeof exports === 'object' && typeof module !== 'undefined') {
                         opStack.length > 0 &&
                         opStack[opStack.length - 1].type !== 'lparen' &&
                         ((precedence[opStack[opStack.length - 1].op] > precedence[op]) ||
-                         (precedence[opStack[opStack.length - 1].op] === precedence[op] && op !== '^'))
+                            (precedence[opStack[opStack.length - 1].op] === precedence[op] && op !== '^'))
                     ) {
                         outputQueue.push(opStack.pop());
                     }

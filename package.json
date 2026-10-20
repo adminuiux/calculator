@@ -1,6 +1,6 @@
 {
   "name": "@goadminuiux/calculator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publishConfig": {
     "access": "public"
   },
@@ -28,7 +28,8 @@
   ],
   "scripts": {
     "test": "node test/calculator.test.js",
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "version:sync": "node scripts/sync-version.js"
   },
   "keywords": [
     "calculator",
