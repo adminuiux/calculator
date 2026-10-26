@@ -1,5 +1,5 @@
 /**
- * Build Script for @goadminuiux/calculator
+ * Build Script for @adminuiux/calculator
  * Source of truth: src/calculator.js
  * Generates:
  *   - dist/calculator.js (Universal UMD bundle)
@@ -67,7 +67,7 @@ console.log('✔ Built dist/calculator.esm.js (' + esmCode.length + ' bytes)');
 terser.minify(srcCode, {
     compress: { drop_console: false },
     mangle: true,
-    output: { comments: /^!|@license|@goadminuiux/ },
+    output: { comments: /^!|@license|@adminuiux/ },
     sourceMap: {
         filename: 'calculator.min.js',
         url: 'calculator.min.js.map'

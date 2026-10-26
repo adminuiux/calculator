@@ -1,4 +1,4 @@
-# @goadminuiux/calculator
+# @adminuiux/calculator
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/adminuiux/calculator/main/calculator-1.png" alt="AdminUIUX Calculator JS" width="100%">
@@ -6,7 +6,7 @@
 
 > Production-ready, zero-dependency universal JavaScript calculator engine & DOM component with chained stream arithmetic, smart percentage handling, scientific math functions, and accessibility.
 
-[![npm version](https://img.shields.io/npm/v/@goadminuiux/calculator.svg)](https://www.npmjs.com/package/@goadminuiux/calculator)
+[![npm version](https://img.shields.io/npm/v/@adminuiux/calculator.svg)](https://www.npmjs.com/package/@adminuiux/calculator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](package.json)
 [![Bundle Size](https://img.shields.io/badge/size-%3C22KB%20minified-brightgreen.svg)](dist/calculator.min.js)
@@ -34,14 +34,14 @@
 ### Via npm
 
 ```bash
-npm install @goadminuiux/calculator
+npm install @adminuiux/calculator
 ```
 
 ### Via jsDelivr CDN
 
 ```html
 <!-- Minified Production Build -->
-<script src="https://cdn.jsdelivr.net/npm/@goadminuiux/calculator@1.0.2/dist/calculator.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@adminuiux/calculator@1.0.2/dist/calculator.min.js"></script>
 ```
 
 Or directly from your local repository:
@@ -57,7 +57,7 @@ Or directly from your local repository:
 ### 1. Headless JavaScript API (ES Modules)
 
 ```javascript
-import { Calculator, Formatter } from "@goadminuiux/calculator";
+import { Calculator, Formatter } from "@adminuiux/calculator";
 
 // Evaluate mathematical expressions
 const total = Calculator.evaluate("100 + 25 * 2"); // 150
@@ -82,7 +82,7 @@ Formatter.format(1234567.89, { currency: "$" }); // "$ 1,234,567.89"
 ### 2. CommonJS (Node.js)
 
 ```javascript
-const { Calculator, Formatter } = require("@goadminuiux/calculator");
+const { Calculator, Formatter } = require("@adminuiux/calculator");
 
 console.log(Calculator.evaluate("2 ^ 3 + 10")); // 18
 console.log(Calculator.tax(100, 0.18)); // 118
@@ -92,7 +92,7 @@ console.log(Calculator.tax(100, 0.18)); // 118
 
 ```html
 <!-- Include Calculator Script -->
-<script src="https://cdn.jsdelivr.net/npm/@goadminuiux/calculator@1.0.2/dist/calculator.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@adminuiux/calculator@1.0.2/dist/calculator.min.js"></script>
 
 <script>
     // Access global namespace
@@ -161,7 +161,7 @@ Add HTML with data attributes. The library automatically detects and binds to `.
 ### Manual JavaScript Initialization
 
 ```javascript
-import { AdminUIUXCalculator } from "@goadminuiux/calculator";
+import { AdminUIUXCalculator } from "@adminuiux/calculator";
 
 // Initialize on specific element
 const calc = AdminUIUXCalculator.init("#myCalculator", {

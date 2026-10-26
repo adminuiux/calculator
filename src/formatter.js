@@ -1,5 +1,5 @@
 /**
- * @goadminuiux/calculator - Formatter Module
+ * @adminuiux/calculator - Formatter Module
  * Zero-dependency numerical formatting, parsing, and symbol conversion utilities.
  *
  * @license MIT

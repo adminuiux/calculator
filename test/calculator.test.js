@@ -1,5 +1,5 @@
 /**
- * Unit Test Suite for @goadminuiux/calculator
+ * Unit Test Suite for @adminuiux/calculator
  * Tests core arithmetic, expressions, percentage handling, scientific functions, and stream state machine.
  */
 

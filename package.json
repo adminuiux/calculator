@@ -1,5 +1,5 @@
 {
-  "name": "@goadminuiux/calculator",
+  "name": "@adminuiux/calculator",
   "version": "1.0.2",
   "publishConfig": {
     "access": "public"
@@ -53,5 +53,5 @@
   "bugs": {
     "url": "https://github.com/adminuiux/calculator/issues"
   },
-  "homepage": "https://adminuiux.com"
+  "homepage": "https://adminuiux.com/plugin-preview/calculator-plugin-preview.html"
 }
