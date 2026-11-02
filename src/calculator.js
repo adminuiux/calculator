@@ -1187,6 +1187,12 @@
             });
         }
 
+        destroy() {
+            if (this.wrapper) {
+                delete this.wrapper._calculatorInstance;
+            }
+        }
+
         // Static Factory Methods
         static create(target, options = {}) {
             const el = typeof target === 'string' ? document.querySelector(target) : target;
@@ -1205,6 +1211,15 @@
             document.querySelectorAll('.calculator, [data-calculator-type], [data-calendar-type]').forEach(el => {
                 if (!el._calculatorInstance) {
                     new AdminUIUXCalculator(el);
+                }
+            });
+        }
+
+        static destroyAll() {
+            if (typeof document === 'undefined') return;
+            document.querySelectorAll('.calculator, [data-calculator-type], [data-calendar-type]').forEach(el => {
+                if (el._calculatorInstance && typeof el._calculatorInstance.destroy === 'function') {
+                    el._calculatorInstance.destroy();
                 }
             });
         }

@@ -8,10 +8,12 @@
   "main": "dist/calculator.js",
   "module": "dist/calculator.esm.js",
   "browser": "dist/calculator.min.js",
+  "types": "dist/calculator.d.ts",
   "unpkg": "dist/calculator.min.js",
   "jsdelivr": "dist/calculator.min.js",
   "exports": {
     ".": {
+      "types": "./dist/calculator.d.ts",
       "import": "./dist/calculator.esm.js",
       "require": "./dist/calculator.js",
       "default": "./dist/calculator.js"

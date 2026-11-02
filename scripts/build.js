@@ -63,7 +63,21 @@ const esmCode = convertUmdToEsm(srcCode);
 fs.writeFileSync(path.join(distDir, 'calculator.esm.js'), esmCode, 'utf8');
 console.log('✔ Built dist/calculator.esm.js (' + esmCode.length + ' bytes)');
 
-// 4. Generate dist/calculator.min.js and source map
+// 4. Copy TypeScript definitions
+const dtsSrc = path.join(rootDir, 'src', 'calculator.d.ts');
+if (fs.existsSync(dtsSrc)) {
+    fs.copyFileSync(dtsSrc, path.join(distDir, 'calculator.d.ts'));
+    console.log('✔ Copied dist/calculator.d.ts');
+}
+
+// 5. Copy src/index.js to dist/index.js
+const indexSrc = path.join(rootDir, 'src', 'index.js');
+if (fs.existsSync(indexSrc)) {
+    fs.copyFileSync(indexSrc, path.join(distDir, 'index.js'));
+    console.log('✔ Copied dist/index.js');
+}
+
+// 6. Generate dist/calculator.min.js and source map
 terser.minify(srcCode, {
     compress: { drop_console: false },
     mangle: true,
