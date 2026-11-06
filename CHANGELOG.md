@@ -17,3 +17,9 @@ All notable changes to this project will be documented in this file.
 - `AdminUIUXCalculator` DOM binding component with automated `DOMContentLoaded` discovery, keyboard shortcuts, output target binding (`data-calculator-output`), calculation target sync (`data-calculator-calculation`), and `calculator:change` custom events.
 - UMD, ESM, CommonJS, and Browser Global packaging support.
 - Unit test suite and interactive demo application.
+
+## [1.0.3] - 2026-11-07
+
+### Added
+
+- Update CSS Design for calculator
