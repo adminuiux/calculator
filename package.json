@@ -8,6 +8,8 @@
   "main": "dist/calculator.js",
   "module": "dist/calculator.esm.js",
   "browser": "dist/calculator.min.js",
+  "style": "dist/calculator.css",
+  "sass": "src/scss/calculator.scss",
   "types": "dist/calculator.d.ts",
   "unpkg": "dist/calculator.min.js",
   "jsdelivr": "dist/calculator.min.js",
@@ -18,6 +20,9 @@
       "require": "./dist/calculator.js",
       "default": "./dist/calculator.js"
     },
+    "./css": "./dist/calculator.css",
+    "./dist/calculator.css": "./dist/calculator.css",
+    "./dist/calculator.min.css": "./dist/calculator.min.css",
     "./package.json": "./package.json"
   },
   "files": [

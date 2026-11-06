@@ -40,6 +40,9 @@ npm install @adminuiux/calculator
 ### Via jsDelivr CDN
 
 ```html
+<!-- Stylesheet -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@adminuiux/calculator@1.0.2/dist/calculator.min.css">
+
 <!-- Minified Production Build -->
 <script src="https://cdn.jsdelivr.net/npm/@adminuiux/calculator@1.0.2/dist/calculator.min.js"></script>
 ```
@@ -47,7 +50,8 @@ npm install @adminuiux/calculator
 Or directly from your local repository:
 
 ```html
-<script src="path/to/plugins-custom/calculator.min.js"></script>
+<link rel="stylesheet" href="path/to/plugins-custom/calculator/dist/calculator.min.css">
+<script src="path/to/plugins-custom/calculator/dist/calculator.min.js"></script>
 ```
 
 ---

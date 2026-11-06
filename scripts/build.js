@@ -13,9 +13,11 @@
 const fs = require('fs');
 const path = require('path');
 const terser = require('terser');
+const sass = require('sass');
 
 const rootDir = path.resolve(__dirname, '..');
 const srcFile = path.join(rootDir, 'src', 'calculator.js');
+const scssFile = path.join(rootDir, 'src', 'scss', 'calculator.scss');
 const distDir = path.join(rootDir, 'dist');
 
 if (!fs.existsSync(distDir)) {
@@ -77,7 +79,22 @@ if (fs.existsSync(indexSrc)) {
     console.log('✔ Copied dist/index.js');
 }
 
-// 6. Generate dist/calculator.min.js and source map
+// 6. Compile SCSS to CSS
+try {
+    if (fs.existsSync(scssFile)) {
+        const cssResult = sass.compile(scssFile, { style: 'expanded' });
+        fs.writeFileSync(path.join(distDir, 'calculator.css'), cssResult.css, 'utf8');
+        console.log('✔ Built dist/calculator.css (' + cssResult.css.length + ' bytes)');
+
+        const minCssResult = sass.compile(scssFile, { style: 'compressed' });
+        fs.writeFileSync(path.join(distDir, 'calculator.min.css'), minCssResult.css, 'utf8');
+        console.log('✔ Built dist/calculator.min.css (' + minCssResult.css.length + ' bytes)');
+    }
+} catch (cssErr) {
+    console.warn('CSS compile warning:', cssErr.message);
+}
+
+// 7. Generate dist/calculator.min.js and source map
 terser.minify(srcCode, {
     compress: { drop_console: false },
     mangle: true,

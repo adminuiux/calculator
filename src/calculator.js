@@ -818,6 +818,7 @@
             if (!this.wrapper) return;
             if (this.wrapper._calculatorInstance) return;
             this.wrapper._calculatorInstance = this;
+            AdminUIUXCalculator.attachStyles();
 
             // Extract configuration from data attributes or arguments
             this.config = Object.assign({
@@ -1206,8 +1207,23 @@
             return new AdminUIUXCalculator(el, options);
         }
 
+        static attachStyles() {
+            if (typeof document === 'undefined') return;
+            if (document.getElementById('adminuiux-calculator-styles')) return;
+
+            // Check if stylesheet link is already attached
+            const hasExisting = document.querySelector('link[href*="calculator.css"], link[href*="calculator.min.css"]');
+            if (hasExisting) return;
+
+            const style = document.createElement('style');
+            style.id = 'adminuiux-calculator-styles';
+            style.textContent = `.calculator{width:100%;position:relative}.calculator .calculator-screen{background-color:var(--adminuiux-primary-tonal,var(--bs-tertiary-bg));border:1px solid var(--bs-border-color,rgba(var(--adminuiux-theme-rgb),.12));border-radius:var(--bs-border-radius,.5rem);padding:.875rem 1rem;transition:border-color .2s ease,box-shadow .2s ease}.calculator .calculator-screen:focus-within{border-color:var(--adminuiux-primary,#3b82f6);box-shadow:0 0 0 .2rem rgba(var(--adminuiux-theme-rgb),.15)}.calculator .calculator-history{min-height:1.25rem;max-height:2.5rem;overflow-x:auto;overflow-y:hidden;white-space:nowrap;font-variant-numeric:tabular-nums;scrollbar-width:none}.calculator .calculator-history::-webkit-scrollbar{display:none}.calculator .calculator-display{min-height:2.25rem;overflow-x:auto;overflow-y:hidden;white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:-.02em;scrollbar-width:none}.calculator .calculator-display::-webkit-scrollbar{display:none}.calculator .calculator-btn{min-height:44px;display:flex;align-items:center;justify-content:center;font-weight:500;transition:all .15s ease-in-out;user-select:none;-webkit-user-select:none}.calculator .calculator-btn:active{transform:scale(.96)}.calculator .calculator-btn.calculator-btn-lg{min-height:52px}.calculator .calculator-btn.calculator-btn-sm{min-height:38px;font-size:.8125rem}.calculator .calculator-tape{max-height:260px;overflow-y:auto;font-family:var(--bs-font-monospace,monospace);font-size:.8125rem}`;
+            document.head.appendChild(style);
+        }
+
         static initAll() {
             if (typeof document === 'undefined') return;
+            AdminUIUXCalculator.attachStyles();
             document.querySelectorAll('.calculator, [data-calculator-type], [data-calendar-type]').forEach(el => {
                 if (!el._calculatorInstance) {
                     new AdminUIUXCalculator(el);
