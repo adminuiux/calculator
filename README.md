@@ -41,16 +41,16 @@ npm install @adminuiux/calculator
 
 ```html
 <!-- Stylesheet -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@adminuiux/calculator@1.0.2/dist/calculator.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@adminuiux/calculator@1.0.3/dist/calculator.min.css" />
 
 <!-- Minified Production Build -->
-<script src="https://cdn.jsdelivr.net/npm/@adminuiux/calculator@1.0.2/dist/calculator.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@adminuiux/calculator@1.0.3/dist/calculator.min.js"></script>
 ```
 
 Or directly from your local repository:
 
 ```html
-<link rel="stylesheet" href="path/to/plugins-custom/calculator/dist/calculator.min.css">
+<link rel="stylesheet" href="path/to/plugins-custom/calculator/dist/calculator.min.css" />
 <script src="path/to/plugins-custom/calculator/dist/calculator.min.js"></script>
 ```
 
