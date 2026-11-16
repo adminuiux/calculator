@@ -130,27 +130,27 @@ Add HTML with data attributes. The library automatically detects and binds to `.
             <div class="col-3"><button type="button" class="btn btn-primary w-100" data-calc-action="operator" data-val="/">÷</button></div>
         </div>
         <div class="row g-2 mb-2">
-            <div class="col-3"><button type="button" class="btn btn-light w-100" data-calc-action="num" data-val="7">7</button></div>
-            <div class="col-3"><button type="button" class="btn btn-light w-100" data-calc-action="num" data-val="8">8</button></div>
-            <div class="col-3"><button type="button" class="btn btn-light w-100" data-calc-action="num" data-val="9">9</button></div>
+            <div class="col-3"><button type="button" class="btn btn-solid theme-light w-100" data-calc-action="num" data-val="7">7</button></div>
+            <div class="col-3"><button type="button" class="btn btn-solid theme-light w-100" data-calc-action="num" data-val="8">8</button></div>
+            <div class="col-3"><button type="button" class="btn btn-solid theme-light w-100" data-calc-action="num" data-val="9">9</button></div>
             <div class="col-3"><button type="button" class="btn btn-primary w-100" data-calc-action="operator" data-val="*">×</button></div>
         </div>
         <div class="row g-2 mb-2">
-            <div class="col-3"><button type="button" class="btn btn-light w-100" data-calc-action="num" data-val="4">4</button></div>
-            <div class="col-3"><button type="button" class="btn btn-light w-100" data-calc-action="num" data-val="5">5</button></div>
-            <div class="col-3"><button type="button" class="btn btn-light w-100" data-calc-action="num" data-val="6">6</button></div>
+            <div class="col-3"><button type="button" class="btn btn-solid theme-light w-100" data-calc-action="num" data-val="4">4</button></div>
+            <div class="col-3"><button type="button" class="btn btn-solid theme-light w-100" data-calc-action="num" data-val="5">5</button></div>
+            <div class="col-3"><button type="button" class="btn btn-solid theme-light w-100" data-calc-action="num" data-val="6">6</button></div>
             <div class="col-3"><button type="button" class="btn btn-primary w-100" data-calc-action="operator" data-val="-">−</button></div>
         </div>
         <div class="row g-2 mb-2">
-            <div class="col-3"><button type="button" class="btn btn-light w-100" data-calc-action="num" data-val="1">1</button></div>
-            <div class="col-3"><button type="button" class="btn btn-light w-100" data-calc-action="num" data-val="2">2</button></div>
-            <div class="col-3"><button type="button" class="btn btn-light w-100" data-calc-action="num" data-val="3">3</button></div>
+            <div class="col-3"><button type="button" class="btn btn-solid theme-light w-100" data-calc-action="num" data-val="1">1</button></div>
+            <div class="col-3"><button type="button" class="btn btn-solid theme-light w-100" data-calc-action="num" data-val="2">2</button></div>
+            <div class="col-3"><button type="button" class="btn btn-solid theme-light w-100" data-calc-action="num" data-val="3">3</button></div>
             <div class="col-3"><button type="button" class="btn btn-primary w-100" data-calc-action="operator" data-val="+">+</button></div>
         </div>
         <div class="row g-2">
             <div class="col-3"><button type="button" class="btn btn-secondary w-100" data-calc-action="negate">±</button></div>
-            <div class="col-3"><button type="button" class="btn btn-light w-100" data-calc-action="num" data-val="0">0</button></div>
-            <div class="col-3"><button type="button" class="btn btn-light w-100" data-calc-action="num" data-val=".">.</button></div>
+            <div class="col-3"><button type="button" class="btn btn-solid theme-light w-100" data-calc-action="num" data-val="0">0</button></div>
+            <div class="col-3"><button type="button" class="btn btn-solid theme-light w-100" data-calc-action="num" data-val=".">.</button></div>
             <div class="col-3"><button type="button" class="btn btn-primary w-100" data-calc-action="equals">=</button></div>
         </div>
     </div>
